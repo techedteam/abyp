@@ -80,6 +80,11 @@ h3.nombre {
     /* padding-top: 0px;*/
 } 
 
+.colorcito {
+    color: #000;
+    font-weight: bold ;
+}
+
 .grid .item img {
     width: 100%;
     border: 0.1px solid #9b9b9b;
