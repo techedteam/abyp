@@ -2,6 +2,12 @@ a {
     text-decoration: none;
 }
 
+#header .inner .content h2.colorcito {
+    font-size: 2em;
+    color: #d53940;
+    margin: 0 0 1em 0;
+}
+
 .contenedor {
     width: 95%;
     padding: 30px 0;
@@ -80,10 +86,8 @@ h3.nombre {
     /* padding-top: 0px;*/
 } 
 
-.colorcito {
-    color: #000;
-    font-weight: bold ;
-}
+
+
 
 .grid .item img {
     width: 100%;

@@ -40,9 +40,7 @@ const grid = new Muuri('.grid', {
               const precio = elemento.parentNode.parentNode.dataset.precio;
               const colores = elemento.parentNode.parentNode.dataset.colores;
               const descripcion1 = elemento.parentNode.parentNode.dataset.descripcion1;
-              const descripcion2 = elemento.parentNode.parentNode.dataset.descripcion2;
-              const descripcion3 = elemento.parentNode.parentNode.dataset.descripcion3;
-              const descripcion4 = elemento.parentNode.parentNode.dataset.descripcion4;
+
 
               overlay.classList.add('activo');
               document.querySelector('#overlay img').src = ruta;
@@ -50,9 +48,6 @@ const grid = new Muuri('.grid', {
               document.querySelector('#overlay .precio').innerHTML = precio;
               document.querySelector('#overlay .colores').innerHTML = colores;
               document.querySelector('#overlay .descripcion1').innerHTML = descripcion1;
-              document.querySelector('#overlay .descripcion2').innerHTML = descripcion2;
-              document.querySelector('#overlay .descripcion3').innerHTML = descripcion3;
-              document.querySelector('#overlay .descripcion4').innerHTML = descripcion4;
 
           });
       });
