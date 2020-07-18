@@ -10,7 +10,7 @@ a {
 
 .contenedor {
     width: 95%;
-    padding: 30px 0;
+    padding: 100px 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -28,16 +28,28 @@ a {
 }
 
 .categorias {
-    display: flex;
+    background: #3586a3;
+    z-index: 2000;
+    max-width: 1000;
+    width: 95%;
+    margin: 20px auto;
+    perspective: 200px;
+/*     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    perspective: 200px;
+    perspective: 200px; */
 }
 
 .categorias ul{
-    display: flex;
-    margin: auto;
     list-style: none;
+/*     display: flex;
+    margin: auto;
+    list-style: none; */
+}
+
+.categorias ul li{
+    display: inline-block;
+    position: relative;
 }
 
 .categorias li:hover{
@@ -56,6 +68,7 @@ a {
     transform: rotateY(240deg) scale(0);
     transition: all 1s;
     box-shadow: 1px 1px 10px 0px black;
+    z-index: 2000;
 }
 
 .categorias ul li:hover > ul{
@@ -89,6 +102,11 @@ a {
 .categorias a.activo {
     color: #000;
     font-weight: bold;
+}
+
+.menu-bar{
+    display: none;
+    z-index: 2000;
 }
 
 .grid {
@@ -204,13 +222,69 @@ h3.nombre {
 
 @media screen and (max-width: 736px) {
 
+    body{
+        padding-top: 80px;
+    }
+
+
+
+    .menu-bar{
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background: #3586a3;
+    }
+
+    .menu-bar .bt-menu{
+        display: block;
+        padding: 20px;
+        color: #fff;
+        overflow: hidden;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .menu-bar span{
+        float: right;
+        font-size: 40px;
+    }
+
+    .contenedor nav{
+        width: 80%;
+        height: calc(100% - 80px);
+        position: fixed;
+        right: 100%;
+        margin: 0;
+        overflow: scroll;
+                
+    }
+
+    .contenedor nav ul li{
+        display: block;
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+    }
+
+    .contenedor nav ul li a{
+        display: block;
+    }
+
+    .contenedor nav ul li:hover .children{
+        display: none;
+    }
+    .contenedor nav ul li .children{
+        width: 100%;
+        position: relative;
+    }
+
+    .contenedor nav ul li .children li a{
+        margin-left: 20px;
+    }
+
     .grid .item {
         width: calc(50% - 20px);
     }
-
-    /* .overlay.activo {
-        display: block;
-    } */
 
 
 }
