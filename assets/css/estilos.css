@@ -10,18 +10,21 @@ a {
 
 .contenedor {
     width: 95%;
-    padding: 100px 0;
+    padding: 10px 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 
 .barra-busqueda {
-    width: 100%;
-    height: 40%;
+    display: block;
+    position: relative;
+    top: 20px;
+    width: 80%;
+    height: 20%;
     line-height: 30px;
     background: #fff;
-    padding: 0 20px;
+    margin: 0 auto;
     border-radius: 100px;
     text-align: center;
     font-size: 16px;
@@ -32,6 +35,7 @@ a {
     z-index: 2000;
     max-width: 1000;
     width: 95%;
+    height: 40px;
     margin: 20px auto;
     perspective: 200px;
 /*     display: flex;
@@ -252,6 +256,7 @@ h3.nombre {
     }
 
     .contenedor nav{
+        top: 80px;
         width: 80%;
         height: calc(100% - 80px);
         position: fixed;
