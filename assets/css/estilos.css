@@ -113,6 +113,10 @@ a {
     z-index: 2000;
 }
 
+.product-description{
+    display: none; 
+}
+
 .grid {
     position: relative;
     width: 100%;

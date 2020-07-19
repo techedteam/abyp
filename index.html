@@ -6,16 +6,15 @@
 -->
 <html>
 	<head>
-		<title>abyp</title>
+		<title>Sistemas de seguridad AB&P</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="Sistemas de seguridad AB&P le ofrece camaras de seguridad para interiores, camaras de video vigilancia para exteriores, alarmas de incendio y robo, cercos eléctricos, automatización, expansores, cables, nuestro almacen está en Riobamba-Ecuador">
-		<meta name="keywords" content="seguridad, camaras, camara, camara interior, camara exterior">
+		<meta name="keywords" content="seguridad, camaras, camara, camara interior, camara exterior, sistemas de seguridad">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/estilos.css">
 	</head>
 	<body>
-
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
@@ -28,37 +27,36 @@
 						<a href="#" class="button big alt"><span>Inicio</span></a>
 					</div>
 					<a href="#" class="button hidden"><span>Inicio</span></a>
-				</div>
+				</div>	
 			</header>
-
+			<div class="barra-busqueda">
+				<form action="">
+					<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar Artículos">
+				</form>
+			</div>
+			<div class="contenedor">
+				<div class="menu-bar">
+					<a href="#" class="bt-menu"><span class="fa fa-bars"></span>Menu</a>
+				</div>
+				<nav class="categorias" id="categorias">
+					<ul>
+						<li><a href="#" class="activo">Ofertas</a></li>
+						<li><a href="#">CCTV</a></li>
+						<li class="submenu"><a href="#">Alarmas</a>
+							<ul class="children">
+								<li><a href="#">Robo</a></li>
+								<li><a href="#">Incendio</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Accesorios</a></li>
+						<li><a href="#">Automatización</a></li>
+						<li><a href="#">Cercos</a></li>
+						<li><a href="#">Liquidación</a></li>
+					</ul>
+				</nav>
+			</div>
 		<!-- Main -->
 			<div id="main">
-				<div class="barra-busqueda">
-					<form action="">
-						<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar Artículos">
-					</form>
-				</div>
-				<div class="contenedor">
-					<div class="menu-bar">
-						<a href="#" class="bt-menu"><span class="fa fa-bars"></span>Menu</a>
-					</div>
-					<nav class="categorias" id="categorias">
-						<ul>
-							<li><a href="#" class="activo">Ofertas</a></li>
-							<li><a href="#">CCTV</a></li>
-							<li class="submenu"><a href="#">Alarmas</a>
-								<ul class="children">
-									<li><a href="#">Robo</a></li>
-									<li><a href="#">Incendio</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Accesorios</a></li>
-							<li><a href="#">Automatización</a></li>
-							<li><a href="#">Cercos</a></li>
-							<li><a href="#">Liquidación</a></li>
-						</ul>
-					</nav>
-				</div>
 				<section class="grid" id="grid">
 					<div class="item"
 					 data-categoria="cctv"
@@ -77,6 +75,29 @@
 						<div class="item-contenido">
 							<h3 class="nombre">Cámara interior plástica 720p</h3>
 						</div>
+						<div itemscope itemtype="http://schema.org/Product" class="product-description">
+							<span itemprop="name">Cámara interior plástica 720ppp</span>
+							<img itemprop="image" src="images/imgcctv1.jpg"" alt='Cámara interior plástica 720p' />
+							<!-- <div itemprop="aggregateRating"
+							  itemscope itemtype="http://schema.org/AggregateRating">
+							 Rated <span itemprop="ratingValue">3.5</span>/5
+							 based on <span itemprop="reviewCount">11</span> customer reviews
+							</div> -->
+							<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+							  <!--price is 1000, a number, with locale-specific thousands separator
+							  and decimal mark, and the $ character is marked up with the
+							  machine-readable code "USD" -->
+							  <span itemprop="priceCurrency" content="USD">$</span><span
+									itemprop="price" content="1.00">1.00</span>
+							  <link itemprop="availability" href="http://schema.org/InStock" />En Existencia
+							</div>
+							Product description:
+							<span itemprop="description">La cámara interior plástica modelo DH-HAC-T1A11N de 720ppp tiene una
+								Resolución de 1MP <br>
+								NTSC/20m/2.8mm <br>
+								Peso: 0.16 kg</span>
+							...
+						  </div>
 					</div>
 					<div class="item"
 					 data-categoria="cctv"
